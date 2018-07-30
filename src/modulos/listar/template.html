@@ -1,0 +1,26 @@
+<div>
+	<input id="txtBuscar" type="text">
+	<button id="btnFiltro" name="consultar">Buscar Titulo
+</div>
+<table class='table '>
+    <thead class='thead-dark'>
+        <tr>
+            <th>#</th>
+            <th>Nombre</th>
+			<th>Autor</th>
+            <th>Genero</th>
+            <th>Puntuacion</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each libros}}
+            <tr>
+                <td>{{id}}</td>
+                <td>{{nombre}}</td>
+				<td>{{autor}}</td>
+                <td>{{genero}}</td>
+                <td>{{puntuacion}}</td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>
